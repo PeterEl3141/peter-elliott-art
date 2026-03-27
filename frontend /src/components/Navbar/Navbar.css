@@ -1,0 +1,48 @@
+.navbar {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+  
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(8px);
+  }
+  
+  .nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+    padding: 20px 40px;
+  }
+  
+  .logo {
+    font-size: 24px;
+    letter-spacing: 1px;
+  }
+  
+  .nav-links {
+    display: flex;
+    gap: 30px;
+  }
+  
+  .nav-link {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 18px;
+    letter-spacing: 1px;
+  
+    transition: color 0.3s ease, opacity 0.3s ease;
+  }
+  
+  /* Hover = subtle lift */
+  .nav-link:hover {
+    color: rgba(255, 255, 255, 0.8);
+  }
+  
+  /* Active link (this gives the fade illusion) */
+  .nav-link.active {
+    color: white;
+    opacity: 1;
+    color: var(--title-gold);
+  }

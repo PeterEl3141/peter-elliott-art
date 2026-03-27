@@ -1,0 +1,55 @@
+.home {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+
+  background: linear-gradient(
+    135deg,
+    #000 0%,
+    #0a0a0a 40%,
+    #111 100%
+  );
+
+  overflow: hidden;
+}
+
+/* Text block (bottom left) */
+.home-content {
+  position: absolute;
+  bottom: 80px; /* slightly higher for balance */
+  left: 60px;
+  max-width: 600px;
+}
+
+/* Bio */
+.home-bio {
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 6px; /* tighter spacing */
+  letter-spacing: 0.5px;
+  max-width: 320px;
+}
+
+/* Name styling */
+.home-title {
+  font-size: 130px; /* slightly reduced so it fits one line */
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  line-height: 0.95; /* tighter vertical rhythm */
+
+  color: var(--title-gold);
+  font-family: 'Cormorant Garamond', serif;
+
+  white-space: nowrap; /* 👈 forces single line */
+}
+
+/* Profile image */
+.home-image {
+  position: absolute;
+  bottom: 0;
+  right: -80px; /* slightly less extreme */
+  
+  height: 85vh;
+  object-fit: contain;
+  pointer-events: none;
+}

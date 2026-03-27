@@ -1,0 +1,76 @@
+.contact {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+  
+    background-image: url('/images/contact-background.jpg');
+    background-size: cover;
+    background-position: center;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Dark overlay to dull image */
+  .contact-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.7);
+  }
+  
+  /* Content */
+  .contact-content {
+    position: relative;
+    text-align: center;
+    max-width: 500px;
+    padding: 20px;
+  }
+  
+  .contact-content h1 {
+    font-size: 64px;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+    font-family: 'Cormorant Garamond', serif;
+    color: var(--title-gold);
+  }
+  
+  .contact-content p {
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 10px;
+  }
+  
+  .contact-email {
+    margin-top: 20px;
+    font-size: 16px;
+    color: #d4af37;
+    letter-spacing: 1px;
+  }
+
+  .contact-email-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 20px;
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    border-radius: 999px;
+    background: transparent;
+    color: var(--title-gold);
+    letter-spacing: 0.5px;
+    transition: border-color 0.25s ease, color 0.25s ease, background-color 0.25s ease;
+  }
+  
+  .contact-email-button:hover {
+    border-color: var(--title-gold);
+  }
+  
+  .contact-email-button:active {
+    border-color: var(--title-gold);
+  }
+  
+  .contact-number {
+    margin-top: 18px;
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.85);
+    letter-spacing: 0.5px;
+  }
