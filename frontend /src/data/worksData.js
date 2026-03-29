@@ -16,7 +16,7 @@ export const worksData = [
       sold: false,
     },
     {
-      title: 'Worms Head 1',
+      title: 'Worms Head I',
       slug: 'worms-head-1',
       price: 'Price on request',
       description: "A study of Worms Head, focusing on the dramatic shape and presence of one of Gower's most recognisable landmarks.",
@@ -24,7 +24,7 @@ export const worksData = [
       sold: true,
     },
     {
-      title: 'Worms Head 2',
+      title: 'Worms Head II',
       slug: 'worms-head-2',
       price: 'Price on request',
       description: 'A second interpretation of Worms Head, with attention to mood, contrast, and the shifting atmosphere of the coast.',
@@ -40,7 +40,7 @@ export const worksData = [
       sold: true,
     },
     {
-      title: 'Snowdon 1',
+      title: 'Snowdon I',
       slug: 'snowdon-1',
       price: 'Price on request',
       description: 'A fine art portrayal of Snowdon, exploring the depth and majesty of the Welsh mountain landscape.',
@@ -48,7 +48,7 @@ export const worksData = [
       sold: false,
     },
     {
-      title: 'Snowdon 2',
+      title: 'Snowdon II',
       slug: 'snowdon-2',
       price: 'Price on request',
       description: 'A second Snowdon study, emphasising atmosphere, tonal contrast, and the changing light across the landscape.',
@@ -96,7 +96,7 @@ export const worksData = [
       sold: true,
     },
     {
-      title: 'Mumbles Lighthouse 1',
+      title: 'Mumbles Lighthouse I',
       slug: 'mumbles-lighthouse-1',
       price: 'Price on request',
       description: 'A fine art study of Mumbles Lighthouse, focusing on form, contrast, and coastal light.',
@@ -104,7 +104,7 @@ export const worksData = [
       sold: true,
     },
     {
-      title: 'Mumbles Lighthouse 2',
+      title: 'Mumbles Lighthouse II',
       slug: 'mumbles-lighthouse-2',
       price: 'Price on request',
       description: 'A second interpretation of Mumbles Lighthouse, exploring a different mood and sense of place.',
@@ -112,7 +112,7 @@ export const worksData = [
       sold: false,
     },
     {
-      title: 'Mumbles Lighthouse 3',
+      title: 'Mumbles Lighthouse III',
       slug: 'mumbles-lighthouse-3',
       price: 'Price on request',
       description: 'A third interpretation of Mumbles Lighthouse, exploring a different mood and sense of place.',
