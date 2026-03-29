@@ -30,7 +30,7 @@ export default function WorkDetails() {
           <div className="work-details-sold">SOLD</div>
         ) : (
           <a
-            href={`mailto:peterelliottart@gmail.com?subject=Enquiry about ${work.title}`}
+            href={`mailto:peterelliott@gmail.com?subject=Enquiry about ${work.title}`}
             className="work-details-cta"
           >
             Request a Quote

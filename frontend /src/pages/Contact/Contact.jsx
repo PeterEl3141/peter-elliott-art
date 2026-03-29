@@ -12,7 +12,7 @@ export default function Contact() {
         </p>
 
         <a
-          href="mailto:peterelliottart@gmail.com"
+          href="mailto:peterelliott@gmail.com"
           className="contact-email-button"
         >
           peterelliottart@gmail.com
