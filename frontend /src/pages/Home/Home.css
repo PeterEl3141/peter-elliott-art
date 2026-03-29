@@ -1,55 +1,161 @@
 .home {
   position: relative;
-  height: 100vh;
+  min-height: 100vh;
   width: 100%;
-
   background: linear-gradient(
     135deg,
     #000 0%,
     #0a0a0a 40%,
     #111 100%
   );
-
   overflow: hidden;
 }
 
-/* Text block (bottom left) */
+/* Text block */
 .home-content {
   position: absolute;
-  bottom: 80px; /* slightly higher for balance */
+  bottom: 80px;
   left: 60px;
   max-width: 600px;
+  z-index: 2;
 }
 
 /* Bio */
 .home-bio {
   font-size: 16px;
   color: rgba(255, 255, 255, 0.7);
-  margin-bottom: 6px; /* tighter spacing */
+  margin-bottom: 6px;
   letter-spacing: 0.5px;
   max-width: 320px;
+  line-height: 1.5;
 }
 
 /* Name styling */
 .home-title {
-  font-size: 130px; /* slightly reduced so it fits one line */
+  font-size: 130px;
   font-weight: 600;
   letter-spacing: 1.5px;
-  line-height: 0.95; /* tighter vertical rhythm */
-
+  line-height: 0.95;
   color: var(--title-gold);
   font-family: 'Cormorant Garamond', serif;
-
-  white-space: nowrap; /* 👈 forces single line */
+  white-space: nowrap;
+  margin: 0;
 }
 
 /* Profile image */
 .home-image {
   position: absolute;
   bottom: 0;
-  right: -80px; /* slightly less extreme */
-  
+  right: -80px;
   height: 85vh;
   object-fit: contain;
   pointer-events: none;
+  z-index: 1;
+}
+
+/* Large tablets / smaller laptops */
+@media (max-width: 1200px) {
+  .home-content {
+    left: 40px;
+    bottom: 60px;
+  }
+
+  .home-title {
+    font-size: 100px;
+  }
+
+  .home-image {
+    right: -40px;
+    height: 78vh;
+  }
+}
+
+/* Tablets */
+@media (max-width: 900px) {
+  .home-content {
+    left: 30px;
+    bottom: 40px;
+    max-width: 420px;
+  }
+
+  .home-bio {
+    font-size: 15px;
+    max-width: 280px;
+  }
+
+  .home-title {
+    font-size: 72px;
+    white-space: normal;
+    line-height: 1;
+  }
+
+  .home-image {
+    right: -20px;
+    height: 65vh;
+    opacity: 0.9;
+  }
+}
+
+/* Phones */
+@media (max-width: 600px) {
+  .home {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 24px 20px 32px;
+    min-height: 100vh;
+  }
+
+  .home-content {
+    position: relative;
+    left: auto;
+    bottom: auto;
+    max-width: 100%;
+    order: 2;
+  }
+
+  .home-bio {
+    font-size: 14px;
+    max-width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .home-title {
+    font-size: 48px;
+    line-height: 1;
+    white-space: normal;
+  }
+
+  .home-image {
+    position: relative;
+    right: auto;
+    bottom: auto;
+    height: auto;
+    width: 100%;
+    max-width: 320px;
+    max-height: 45vh;
+    margin: 0 auto 20px;
+    display: block;
+    order: 1;
+  }
+}
+
+/* Very small phones */
+@media (max-width: 400px) {
+  .home {
+    padding: 20px 16px 24px;
+  }
+
+  .home-title {
+    font-size: 38px;
+  }
+
+  .home-bio {
+    font-size: 13px;
+  }
+
+  .home-image {
+    max-width: 260px;
+    max-height: 40vh;
+  }
 }

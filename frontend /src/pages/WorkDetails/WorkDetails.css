@@ -67,6 +67,14 @@
   }
 
 
+  .work-details-sold {
+    margin-top: 30px;
+    font-size: 1.4rem;
+    letter-spacing: 2px;
+    color: var(--title-gold);
+  }
+  
+
   @media (max-width: 900px) {
     .work-details {
       grid-template-columns: 1fr;

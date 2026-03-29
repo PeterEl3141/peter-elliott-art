@@ -10,7 +10,11 @@ export default function Product({ work }) {
 
       <div className="product-info">
         <h2 className="product-title">{work.title}</h2>
-        <p className="product-price">{work.price}</p>
+
+        <div className="product-meta">
+          <p className="product-price">{work.price}</p>
+          {work.sold && <span className="product-sold">SOLD</span>}
+        </div>
       </div>
     </Link>
   )

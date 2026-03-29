@@ -25,12 +25,17 @@ export default function WorkDetails() {
         <h1 className="work-details-title">{work.title}</h1>
         <p className="work-details-price">{work.price}</p>
         <p className="work-details-description">{work.description}</p>
-        <a
-        href={`mailto:peterelliottart@gmail.com?subject=Enquiry about ${work.title}`}
-        className="work-details-cta"
-      >
-        Request a Quote
-      </a>
+
+        {work.sold ? (
+          <div className="work-details-sold">SOLD</div>
+        ) : (
+          <a
+            href={`mailto:peterelliottart@gmail.com?subject=Enquiry about ${work.title}`}
+            className="work-details-cta"
+          >
+            Request a Quote
+          </a>
+        )}
       </div>
     </div>
   )
